@@ -38,6 +38,7 @@ class Employee {
 			print $this->experience;
 			print $this->rating;
 		} else {
+			print $this->first_name;
 			print $this->last_name;
 			print $this->skills;
 			print $this->salary;
