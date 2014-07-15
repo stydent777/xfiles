@@ -5,18 +5,18 @@ class Employee {
 	public  $last_name  = null;
 	public  $skills     = null;
 	private $dismissal  = null;
-	public  $salary 	= null;
+	public  $salary     = null;
 	public  $experience = null;
-	private $rating 	= null;
-	protected $password   = 'qwert';
+	private $rating     = null;
+	protected $password = 'qwert';
 
 	function __construct($first_name,
-						 $last_name,
-						 $skills,
-						 $dismissal,
-						 $salary,
-						 $experience,
-						 $rating) {
+			     $last_name,
+			     $skills,
+			     $dismissal,
+			     $salary,
+			     $experience,
+			     $rating) {
 
 		$this->first_name  = $first_name;
 		$this->last_name   = $last_name;
@@ -58,21 +58,21 @@ class Trainee extends Employee {
 	public $probation = null;
 
 	function __construct($first_name,
-						 $last_name,
-						 $skills,
-						 $dismissal,
-						 $salary,
-						 $experience,
-						 $rating,
-						 $probation) {
+			     $last_name,
+			     $skills,
+			     $dismissal,
+			     $salary,
+			     $experience,
+			     $rating,
+			     $probation) {
 
 		parent::__construct($first_name,
-							$last_name,
-							$skills,
-							$dismissal,
-							$salary,
-							$experience,
-							$rating);
+			  	    $last_name,
+			  	    $skills,
+			  	    $dismissal,
+			  	    $salary,
+			  	    $experience,
+			  	    $rating);
 
 		$this->probation = $probation;
 	}
